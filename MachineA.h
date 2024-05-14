@@ -6,12 +6,26 @@
 #define ALTKLAUSUREN_MACHINEA_H
 
 #include <iostream>
+#include <exception>
+#include "Machine.h"
+#include "Exceptions.h"
 
-class MachineA {
+/*
+ * MachineA:
+▪ Produziert pro Zeitschritt 2 Einheiten von Produkt A.
+▪ Hat eine 15% Wahrscheinlichkeit eine MachineFailureException zu werfen.
+▪ Hat eine 2% Wahrscheinlichkeit eine MachineExplosionException zu werfen.
+ */
+
+class MachineA : public Machine{
+
 
 public:
     MachineA();
     ~MachineA();
+
+    //Produziert pro Zeitschritt 2 Einheiten von Produkt A.
+    void tick() override;
 
 
 };

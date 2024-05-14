@@ -17,3 +17,7 @@ ProductA::~ProductA() {
 int ProductA::getType() {
     return 1;
 }
+
+std::string ProductA::getName() {
+    return "ProductA";
+}

@@ -7,6 +7,7 @@
 
 
 #include "Product.h"
+#include "Exceptions.h"
 
 class ProductA : public Product {
 
@@ -18,6 +19,8 @@ public:
 
     int getType() override;
 
+    //getName() gibt den Namen des Produkts zurück
+    std::string getName() override;
 
 };
 

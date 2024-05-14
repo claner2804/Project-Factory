@@ -6,6 +6,7 @@
 #define ALTKLAUSUREN_PRODUCTB_H
 
 #include "Product.h"
+#include "Exceptions.h"
 
 class ProductB : public Product{
 
@@ -14,6 +15,8 @@ public:
     ~ProductB();
 
     int getType() override;
+
+    std::string getName() override;
 
 };
 

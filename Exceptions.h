@@ -12,16 +12,21 @@
 //klasse FactoryException erbt von runtime_error und gibt die Fehlermeldung dessen Konstruktor
 class FactoryException : public std::runtime_error {
 public:
-    FactoryException(const std::string& message) : std::runtime_error(message) {}
+    explicit FactoryException(const std::string& message) : std::runtime_error(message) {}
 };
 
-/*
-class InvalidArgument : public RobotException {
+
+class MachineFailureException : public FactoryException {
 public:
-    using RobotException::RobotException;
-};
- */
+    explicit MachineFailureException(const std::string& message) : FactoryException(message) {}
 
+};
+
+
+class MachineExplosionException : public FactoryException {
+public:
+    explicit MachineExplosionException(const std::string& message) : FactoryException(message) {}
+};
 
 
 #endif //ALTKLAUSUREN_EXCEPTIONS_H
