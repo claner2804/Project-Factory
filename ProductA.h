@@ -6,11 +6,18 @@
 #define ALTKLAUSUREN_PRODUCTA_H
 
 
-class ProductA {
+#include "Product.h"
+
+class ProductA : public Product {
+
+    //protected weil es von den Unterklassen geerbt wird
 
 public:
     ProductA();
     ~ProductA();
+
+    int getType() override;
+
 
 };
 

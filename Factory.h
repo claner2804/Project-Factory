@@ -5,6 +5,8 @@
 #ifndef ALTKLAUSUREN_FACTORY_H
 #define ALTKLAUSUREN_FACTORY_H
 
+#include "Product.h"
+#include <iostream>
 
 class Factory {
 

@@ -6,6 +6,8 @@
 #define ALTKLAUSUREN_EXCEPTIONS_H
 
 #include <stdexcept>
+#include <string>
+#include <iostream>
 
 //klasse FactoryException erbt von runtime_error und gibt die Fehlermeldung dessen Konstruktor
 class FactoryException : public std::runtime_error {

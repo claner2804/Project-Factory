@@ -4,10 +4,16 @@
 
 #include "ProductB.h"
 
+
 ProductB::ProductB() {
     std::cout << "ProductB created" << std::endl;
 }
 
 ProductB::~ProductB() {
     std::cout << "ProductB destroyed" << std::endl;
+}
+
+//getType() gibt in der Unter-Klasse B 2 zurück
+int ProductB::getType() {
+    return 2;
 }

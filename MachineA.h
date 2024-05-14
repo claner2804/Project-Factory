@@ -5,6 +5,7 @@
 #ifndef ALTKLAUSUREN_MACHINEA_H
 #define ALTKLAUSUREN_MACHINEA_H
 
+#include <iostream>
 
 class MachineA {
 
