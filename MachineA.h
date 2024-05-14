@@ -27,6 +27,10 @@ public:
     //Produziert pro Zeitschritt 2 Einheiten von Produkt A.
     void tick() override;
 
+    std::string getName() override {
+        return "MachineA";
+    }
+
 
 };
 

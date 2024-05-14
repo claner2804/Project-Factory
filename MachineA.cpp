@@ -3,6 +3,8 @@
 //
 
 #include "MachineA.h"
+#include "ProductA.h"
+#include <stdlib.h>
 
 /*
  * MachineA:
@@ -32,5 +34,7 @@ void MachineA::tick() {
         throw MachineExplosionException("MachineA::tick Machine Explosion Exception");
     }
     //produkt A wird um 2 erhöht
-    //todo: this->productA += 2;
+    factory->addProduct(new ProductA);
+    factory->addProduct(new ProductA);
+
 }

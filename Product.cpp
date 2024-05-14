@@ -5,7 +5,7 @@
 #include "Product.h"
 
 Product::Product() {
-    std::cout << "Product created" << std::endl;
+
 }
 
 Product::~Product() {
@@ -16,5 +16,7 @@ Product::~Product() {
 int Product::getType() {
     return 0;
 }
+
+
 
 

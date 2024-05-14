@@ -24,6 +24,10 @@ public:
 
     void tick() override;
 
+    std::string getName() override {
+        return "MachineB";
+    }
+
 };
 
 

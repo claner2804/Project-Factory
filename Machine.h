@@ -10,18 +10,19 @@
 #include "Factory.h"
 #include "Exceptions.h"
 
-//Forward declaration
-class Factory;
-
 class Machine {
+protected:
+    Factory* factory;
 
 public:
     Machine();
-    ~Machine();
+    virtual ~Machine();
 
     //Simuliert das Produzieren von Produkten
     // (siehe Ablauf Zeitschleife)
-    virtual void tick();
+    virtual void tick() = 0;
+
+    virtual std::string getName() = 0;
 
 
     /*

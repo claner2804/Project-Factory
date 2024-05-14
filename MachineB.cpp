@@ -3,6 +3,7 @@
 //
 
 #include "MachineB.h"
+#include "ProductB.h"
 
 /*
  * MachineB
@@ -30,6 +31,8 @@ void MachineB::tick() {
     } else if (random < 25) {
         throw MachineExplosionException("MachineB::tick Machine Explosion Exception");
     }
-    //produkt A wird um 3 erhöht
-    //todo: this->productA += 3;
+    //produkt B wird um 3 erhöht
+    factory->addProduct(new ProductB);
+    factory->addProduct(new ProductB);
+    factory->addProduct(new ProductB);
 }

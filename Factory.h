@@ -11,7 +11,6 @@
 #include <vector>
 #include <memory>
 #include <map>
-#include "Machine.h"
 
 
 /*
@@ -65,6 +64,21 @@ public:
     // übergeben wird, dann soll eine MachineFailureException
     // geworfen werden.
     void addProduct(Product* p);
+
+
+    //Gibt die Anzahl der im Lager vorhandenen Produkte A zurück.
+    unsigned getProductACount();
+
+
+    //Gibt die Anzahl der im Lager vorhandenen Produkte B zurück.
+    unsigned getProductBCount();
+
+
+    //Diese Methode implementiert die Zeitschleife.
+    // Der Eingabeparameter iterations gibt an, nach wievielen
+    // Iterationen die Zeitschleife abgebrochen werden soll
+    // (0 bedeutet, dass die Schleife nie abgebrochen wird).
+    void run(unsigned iterations);
 
 
 

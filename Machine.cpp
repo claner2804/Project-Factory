@@ -3,20 +3,18 @@
 //
 
 #include "Machine.h"
-
+#include "Factory.h"
+#include <iostream>
 
 Machine::Machine() {
-    std::cout << "Machine created" << std::endl;
 }
+
 
 Machine::~Machine() {
     std::cout << "Machine destroyed" << std::endl;
+    delete &factory;
 }
 
-//Simuliert das Produzieren von Produkten (siehe Ablauf Zeitschleife)
-void Machine::tick() {
-
-}
 
 
 /*
@@ -27,6 +25,7 @@ void Machine::tick() {
  * Referenz der Maschine in der addMachine()-Methode übergeben werden
  */
 void Machine::setFactory(Factory *f) {
-  //TODO: Implementiere das und addMachine()
+    factory = f;
 }
+
 
